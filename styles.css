@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     */
+     font-family: 'Roboto';
+    color: #fff;
+    /* font-weight: 300; */
+
+/* HOW TO USE FONT WEIGHT ????????????*/ 
+/* ONE BY ONE MANUALLY */
+
+}
+
+.section {
+    padding: 0 100px;    
+}
+
+.container{
+    height: 50vh;
+    width: 50%;
+}
+
+.logo{
+    margin-left: 60%;
+    margin-right: 50%;
+    width: 500px;
+    margin-top: 50px;
+}
+
+.first-images{
+    display: flex;
+    height: 27vh;
+}
+
+.navbar{
+    margin-bottom: 100px;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar.fixed {
+    position: fixed;
+    box-shadow: 5px 5px 19px 0px rgba(0, 0, 0, 0.5);
+    width: auto;
+    top: 0;
+  }
+
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+@media only screen and (max-width: 600px){
+    nav ul li a{
+        color: red;
+    }
+}
+
+
+
+
+
+/* uwu */
+
+
+
+.navbar .fixed nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+.navbar .fixed nav ul li{
+    list-style: none;
+}
+
+.navbar .fixed nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* SECTION 1 */
+
+
+.sec1{
+    display: flex;
+    height: 25vh;
+    justify-content: space-between;
+}
+
+.second-images{
+    display: flex;
+    
+}
+
+.second-images img{
+    /* gap: 0.2rem; */
+}
+
+.text1{
+    width: 600px
+}
+
+.text1 h2 {
+    margin-bottom: 20px;
+}
+
+/* SECTION 2 */
+
+.sec2{
+    display: flex;
+    height: 25vh;
+    justify-content: space-between;
+}
+
+.thrid-images {
+    display: flex;
+    gap: .5em;
+}
+
+.thrid-images img {
+    width: auto;
+}
+
+.sec2{
+    margin-top: 100px;
+}
+
+/* SECTION 3 */
+
+.sec3{
+    display: flex;
+    height: 25vh;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+/* SECTION 4 */
+
+
+.sec4{
+    display: flex;
+    height: 25vh;
+    gap: 70px;
+    margin-top: 12vh;
+}
+
+.square{
+    width: 600px;
+    height: 194.64px;
+    left: 0%;
+    right: 53.31%;
+    top: 0%;
+    bottom: 0.19%;
+    background: #C4C4C4;
+}
+
+.square iframe{
+    width: 600px;
+    height: 194.64px;
+}
+
+.standort{
+    display: flex;
+}
+
+.tan {
+    margin: 30px 0;
+}
+
+/* UBER UNS */
+
+.uber{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 8rem;
+}
+
+.uber_img{
+    display: flex;
+    height: 40vh;
+    gap: 0.5rem;
+}
+
+.uuber h2{
+    margin: 50px 0;
+    font-family: 'canterbury';
+    font-size: 35px;
+}
+
+.uber_text{
+    width: 600px;
+}
+
+/* TEACHER SECTION */
+
+.teacherr{
+    display: flex;
+    margin: 100px 0;
+    justify-content: space-between;
+    
+}
+
+.square2{
+    Width: 599.14px;
+    Height: 237.34px;
+    background: #C4C4C4;
+}
+
+
+.teachers_text{
+    width: 500px;
+}
+
+.teachers_text h2{
+    font-family: 'Canterbury';
+    font-size: 64px;
+    margin-bottom: 30px;
+
+}
+
+/* TEACHER CARDS */
+
+
+
+.teacher_names{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.big{
+    height: 62vh;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 80px;
+}
+
+
+.teacher-image {
+    height: 30vh;
+    margin-bottom: 10vh;
+}
+
+.teach{
+    display: flex;
+}
+
+.teacher-card {
+    display: flex;
+    margin-right: 50px;
+}
+
+.text-col h2{
+    margin-bottom: 30px;
+}
+
+.bottom{
+    margin-bottom: 20px;
+}
+
+/* TEACHER SECTION END */
+
+
+
+/* SECTION FIVE */
+
+.sec5{
+    display: flex;
+    height: 25vh;
+    margin-top: 12vh;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.img3{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.cuadradito{
+    Width: 93px;
+    Height: 85px;
+    Top: 86px;
+    Left: 685px;
+    top: 21.94%;
+    bottom: 56.38%;
+    background: #C4C4C4;
+}
+
+/* SECTION SIX */
+
+
+.sec6{
+    display: flex;
+    height: 25vh;
+    justify-content: center;
+    gap: 10.8rem;
+    margin-top: 10px;
+}
+
+.img4{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.kontakt2{
+    margin-top: 50px;
+}
+
+/* .kontakt{
+
+
+/* Youtube Vids */
+
+.vid{
+    display: flex;
+    height: 25vh;
+    margin-top: 100px;
+    justify-content: space-evenly;
+
+}
+
+.yt{
+    width: 600px;
+}
+
+.yt_vids{
+    width: 600px;
+    height: 194.64px;
+    left: 52.13%;
+    right: 2.28%;
+    top: 1.41%;
+    bottom: 69.59%;
+background: #C4C4C4;
+}
+
+.yt_vids iframe{
+    width: 600px;
+    height: 194.64px;
+}
+
+
+
+
+
