@@ -1,37 +1,41 @@
 * {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     background-color: black;
-    /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-     */
-     font-family: 'Roboto';
+    font-family: 'Roboto';
     color: #fff;
-    /* font-weight: 300; */
-
-/* HOW TO USE FONT WEIGHT ????????????*/ 
-/* ONE BY ONE MANUALLY */
-
+    overflow-x: hidden;
 }
 
 .section {
-    padding: 0 100px;    
+    padding: 0 30px;    
+}
+
+.reversible-cards {
+    margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+    .section {
+        padding: 0 50px;    
+    }
 }
 
 .container{
-    height: 50vh;
-    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo{
-    margin-left: 60%;
-    margin-right: 50%;
-    width: 500px;
-    margin-top: 50px;
+    width: clamp(400px, 60vw, 600px);
+    margin: 50px;
 }
 
 .first-images{
     display: flex;
-    height: 27vh;
+    height: clamp(400px, 60vh, 600px);
+    overflow: hidden;
 }
 
 .navbar{
@@ -48,80 +52,105 @@
     top: 0;
   }
 
-
 nav ul {
     display: flex;
     justify-content: space-evenly;
     padding: 30px;
+    flex-wrap: wrap;
 }
 
-nav ul li{
+nav ul li {
     list-style: none;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: #fff;
+    padding: 0 10px;
 }
 
-@media only screen and (max-width: 600px){
-    nav ul li a{
-        color: red;
+
+/* SECTION 1 */
+
+/* .reversible-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+.second-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    /* .sec1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    } */
+    /* .sec1 {
+        display: grid;
+        grid-auto-flow:column;
+        justify-content: space-between;
+        align-items: center;
+    } */
+
+    .second-images {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+    }
+}
+
+@media(min-width: 900px) {
+    .sec1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
     }
 }
 
 
 
-
-
-/* uwu */
-
-
-
-.navbar .fixed nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 30px;
+.sec1-image {
+    /* width: clamp(270px, 55%, 300px); */
+    width: 300px;
+    /* width: clamp(250px, 300px, 400px); */
 }
 
-.navbar .fixed nav ul li{
-    list-style: none;
-}
-
-.navbar .fixed nav ul li a{
-    text-decoration: none;
-    color: #fff;
-}
-
-/* SECTION 1 */
-
-
-.sec1{
+/* .sec1 {
     display: flex;
     height: 25vh;
     justify-content: space-between;
-}
+} */
 
-.second-images{
-    display: flex;
-    
-}
-
-.second-images img{
-    /* gap: 0.2rem; */
-}
-
-.text1{
-    width: 600px
+.text1 {
+    margin-top: 2em;
+    /* max-width: 600px; */
+    width: clamp(400px, 500px, 600px);
 }
 
 .text1 h2 {
     margin-bottom: 20px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
 /* SECTION 2 */
 
-.sec2{
+.sec2 { 
     display: flex;
     height: 25vh;
     justify-content: space-between;
@@ -136,13 +165,13 @@ nav ul li a{
     width: auto;
 }
 
-.sec2{
+.sec2 {
     margin-top: 100px;
 }
 
 /* SECTION 3 */
 
-.sec3{
+.sec3 {
     display: flex;
     height: 25vh;
     justify-content: space-between;
@@ -152,14 +181,14 @@ nav ul li a{
 /* SECTION 4 */
 
 
-.sec4{
+.sec4 {
     display: flex;
     height: 25vh;
     gap: 70px;
     margin-top: 12vh;
 }
 
-.square{
+.square {
     width: 600px;
     height: 194.64px;
     left: 0%;
@@ -169,12 +198,12 @@ nav ul li a{
     background: #C4C4C4;
 }
 
-.square iframe{
+.square iframe {
     width: 600px;
     height: 194.64px;
 }
 
-.standort{
+.standort {
     display: flex;
 }
 
@@ -184,177 +213,49 @@ nav ul li a{
 
 /* UBER UNS */
 
-.uber{
+.uber {
     display: flex;
     justify-content: space-evenly;
     gap: 8rem;
 }
 
-.uber_img{
+.uber_img {
     display: flex;
     height: 40vh;
     gap: 0.5rem;
 }
 
-.uuber h2{
+.uuber h2 {
     margin: 50px 0;
     font-family: 'canterbury';
     font-size: 35px;
 }
 
-.uber_text{
+.uber_text {
     width: 600px;
 }
 
 /* TEACHER SECTION */
 
-.teacherr{
+.teacherr { 
     display: flex;
     margin: 100px 0;
     justify-content: space-between;
-    
 }
 
-.square2{
+.square2 {
     Width: 599.14px;
     Height: 237.34px;
     background: #C4C4C4;
 }
 
 
-.teachers_text{
+.teachers_text {
     width: 500px;
 }
 
-.teachers_text h2{
+.teachers_text h2 {
     font-family: 'Canterbury';
     font-size: 64px;
     margin-bottom: 30px;
-
 }
-
-/* TEACHER CARDS */
-
-
-
-.teacher_names{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.big{
-    height: 62vh;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    padding: 80px;
-}
-
-
-.teacher-image {
-    height: 30vh;
-    margin-bottom: 10vh;
-}
-
-.teach{
-    display: flex;
-}
-
-.teacher-card {
-    display: flex;
-    margin-right: 50px;
-}
-
-.text-col h2{
-    margin-bottom: 30px;
-}
-
-.bottom{
-    margin-bottom: 20px;
-}
-
-/* TEACHER SECTION END */
-
-
-
-/* SECTION FIVE */
-
-.sec5{
-    display: flex;
-    height: 25vh;
-    margin-top: 12vh;
-    justify-content: center;
-    gap: 5rem;
-}
-
-.img3{
-    display: flex;
-    gap: 0.5rem;
-}
-
-.cuadradito{
-    Width: 93px;
-    Height: 85px;
-    Top: 86px;
-    Left: 685px;
-    top: 21.94%;
-    bottom: 56.38%;
-    background: #C4C4C4;
-}
-
-/* SECTION SIX */
-
-
-.sec6{
-    display: flex;
-    height: 25vh;
-    justify-content: center;
-    gap: 10.8rem;
-    margin-top: 10px;
-}
-
-.img4{
-    display: flex;
-    gap: 0.5rem;
-}
-
-.kontakt2{
-    margin-top: 50px;
-}
-
-/* .kontakt{
-
-
-/* Youtube Vids */
-
-.vid{
-    display: flex;
-    height: 25vh;
-    margin-top: 100px;
-    justify-content: space-evenly;
-
-}
-
-.yt{
-    width: 600px;
-}
-
-.yt_vids{
-    width: 600px;
-    height: 194.64px;
-    left: 52.13%;
-    right: 2.28%;
-    top: 1.41%;
-    bottom: 69.59%;
-background: #C4C4C4;
-}
-
-.yt_vids iframe{
-    width: 600px;
-    height: 194.64px;
-}
-
-
-
-
-
