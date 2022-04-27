@@ -1,261 +1,90 @@
 * {
-    margin: 0 auto;
+    box-sizing: border-box;
+    margin: 0;
     padding: 0;
     background-color: black;
     font-family: 'Roboto';
     color: #fff;
-    overflow-x: hidden;
 }
 
 .section {
-    padding: 0 30px;    
+    margin: 0 40px;
 }
 
-.reversible-cards {
-    margin: 0 auto;
-}
-
-@media (min-width: 800px) {
-    .section {
-        padding: 0 50px;    
-    }
-}
-
-.container{
+.container {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
-.logo{
-    width: clamp(400px, 60vw, 600px);
-    margin: 50px;
+.logo {
+    width: 50%;
+    margin: 40px 0;
 }
 
-.first-images{
+.first-images {
     display: flex;
-    height: clamp(400px, 60vh, 600px);
-    overflow: hidden;
 }
 
-.navbar{
-    margin-bottom: 100px;
-    top: 0;
-    left: 0;
-    right: 0;
+.first-images img {
+    width: 16%;
 }
 
-.navbar.fixed {
-    position: fixed;
-    box-shadow: 5px 5px 19px 0px rgba(0, 0, 0, 0.5);
-    width: auto;
-    top: 0;
-  }
+.nav {
+    margin: 40px 0;
+}
 
-nav ul {
+.navbar {
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
-    padding: 30px;
     flex-wrap: wrap;
-}
-
-nav ul li {
     list-style: none;
 }
 
-nav ul li a {
+.navbar li {
+    padding: 0 20px;
+}
+
+.navbar li a {
     text-decoration: none;
-    color: #fff;
-    padding: 0 10px;
 }
 
-
-/* SECTION 1 */
-
-/* .reversible-cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
-
-.second-images {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.sec1 {
+    margin: 0 auto;
 }
 
-@media (min-width: 768px) {
-    /* .sec1 {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    } */
-    /* .sec1 {
-        display: grid;
-        grid-auto-flow:column;
-        justify-content: space-between;
-        align-items: center;
-    } */
+.second-images img {
+    width: 100%;
+}
+
+.text1 {
+    margin: 40px 0;
+}
+
+@media (min-width: 600px) {
+    .second-images img {
+        width: 50%;
+    }
 
     .second-images {
         display: flex;
-        flex-direction: row;
-        align-items: stretch;
     }
 }
 
-@media(min-width: 900px) {
+@media (min-width: 1024px) {
     .sec1 {
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        margin: 0 auto;
+        gap: 4em;
     }
-}
 
+    .second-images {
+        max-width: 50%;
+    }
 
-
-.sec1-image {
-    /* width: clamp(270px, 55%, 300px); */
-    width: 300px;
-    /* width: clamp(250px, 300px, 400px); */
-}
-
-/* .sec1 {
-    display: flex;
-    height: 25vh;
-    justify-content: space-between;
-} */
-
-.text1 {
-    margin-top: 2em;
-    /* max-width: 600px; */
-    width: clamp(400px, 500px, 600px);
-}
-
-.text1 h2 {
-    margin-bottom: 20px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/* SECTION 2 */
-
-.sec2 { 
-    display: flex;
-    height: 25vh;
-    justify-content: space-between;
-}
-
-.thrid-images {
-    display: flex;
-    gap: .5em;
-}
-
-.thrid-images img {
-    width: auto;
-}
-
-.sec2 {
-    margin-top: 100px;
-}
-
-/* SECTION 3 */
-
-.sec3 {
-    display: flex;
-    height: 25vh;
-    justify-content: space-between;
-    margin-top: 10px;
-}
-
-/* SECTION 4 */
-
-
-.sec4 {
-    display: flex;
-    height: 25vh;
-    gap: 70px;
-    margin-top: 12vh;
-}
-
-.square {
-    width: 600px;
-    height: 194.64px;
-    left: 0%;
-    right: 53.31%;
-    top: 0%;
-    bottom: 0.19%;
-    background: #C4C4C4;
-}
-
-.square iframe {
-    width: 600px;
-    height: 194.64px;
-}
-
-.standort {
-    display: flex;
-}
-
-.tan {
-    margin: 30px 0;
-}
-
-/* UBER UNS */
-
-.uber {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 8rem;
-}
-
-.uber_img {
-    display: flex;
-    height: 40vh;
-    gap: 0.5rem;
-}
-
-.uuber h2 {
-    margin: 50px 0;
-    font-family: 'canterbury';
-    font-size: 35px;
-}
-
-.uber_text {
-    width: 600px;
-}
-
-/* TEACHER SECTION */
-
-.teacherr { 
-    display: flex;
-    margin: 100px 0;
-    justify-content: space-between;
-}
-
-.square2 {
-    Width: 599.14px;
-    Height: 237.34px;
-    background: #C4C4C4;
-}
-
-
-.teachers_text {
-    width: 500px;
-}
-
-.teachers_text h2 {
-    font-family: 'Canterbury';
-    font-size: 64px;
-    margin-bottom: 30px;
+    .text1 {
+        max-width: 50%;
+        padding: 30px;
+    }
 }
