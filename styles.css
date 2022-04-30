@@ -26,9 +26,11 @@
     display: flex;
 }
 
+/* Every direct child of the first images parent */
 .first-images > * {
     flex-basis: 100%;
 }
+/* End every direct child... */
 
 .first-images img {
     width: 14%;
@@ -56,46 +58,80 @@
     text-decoration: none;
 }
 
-/* Cards */
+/* Added by JavaScript on scroll */
+.fixed {
+    position: fixed;
+    box-shadow: 5px 5px 19px 0px rgba(0, 0, 0, 0.5);
+    padding: 30px 0;
+    margin-top: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+}
 
-.second-images img {
+.spacer {
+    margin-top: 150px;
+}
+/* End added by JavaScript on scroll */
+
+/* ---------------- */
+/* ---- Cards ----- */
+/* ---------------- */
+
+.sec {
+    margin-bottom: 50px;
+}
+
+.sec-images img {
     width: 100%;
 }
 
-.text1 > * {
+.text > * {
     text-align: justify;
 }
 
-.text1 > h2 {
+.text > h2 {
     margin-bottom: 12px;
 }
 
+.text {
+    margin: 20px 0; 
+}
+
 @media (min-width: 768px) {
-    .second-images {
+    .sec-images {
         display: flex;
     }
 
-    .second-images img {
+    .sec-images img {
         width: 50%;
+    }
+
+    .three img {
+        width: 33%;
     }
 }
 
 @media (min-width: 1024px) {
-    .sec1 {
+    .sec {
         display: flex;
         align-items: center;
         gap: 4em;
     }
 
-    .sec1 > * {
+    .sec > * {
         flex-basis: 100%;
     }
     
-    .second-images {
+    .sec-images {
         width: 50%;
     }
 
-    .text1 {
+    .text {
         width: 50%;
+    }
+
+    .reversed {
+        order: 1;
     }
 }

@@ -37,15 +37,19 @@
 //     imagen.style.width = "";
 //   }
 // });
-// const nav = document.querySelector(".navbar");
-// let navTop = nav.offsetTop;
 
-// function fixedNav() {
-//   if (window.scrollY >= navTop) {
-//     nav.classList.add("fixed");
-//   } else {
-//     nav.classList.remove("fixed");
-//   }
-// }
+const nav = document.querySelector(".nav");
+const sectionOne = document.querySelector(".section-one");
+let navTop = nav.offsetTop;
 
-// window.addEventListener("scroll", fixedNav);
+function fixedNav() {
+  if (window.scrollY >= navTop) {
+    nav.classList.add("fixed");
+    sectionOne.classList.add("spacer");
+  } else {
+    nav.classList.remove("fixed");
+    sectionOne.classList.remove("spacer");
+  }
+}
+
+window.addEventListener("scroll", fixedNav);
