@@ -38,6 +38,9 @@
 //   }
 // });
 
+// Import image slider package (code written by someone else) to help us with the functionality.
+// The Javascript for the slider starts in line 64.
+
 const nav = document.querySelector(".nav");
 const sectionOne = document.querySelector(".section-one");
 let navTop = nav.offsetTop;

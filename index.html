@@ -10,7 +10,8 @@
       rel="stylesheet"
       href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="index.js" type="module" defer></script>
   </head>
 
   <body>
@@ -20,13 +21,21 @@
       </div>
 
       <!-- First Images -->
-      <div class="first-images">
-        <img src="images/img-1.jpg" />
-        <img src="images/img-2.jpg" />
-        <img src="images/resized/rsz_1img-3.jpg" />
-        <img src="images/img-4.jpg" />
-        <img src="images/img-5.jpg" />
-        <img src="images/img-6.jpg" />
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="images/img-1.jpg" class="slider-img" /></div>
+          <div class="swiper-slide"><img src="images/img-2.jpg" class="slider-img" /></div>
+          <div class="swiper-slide"><img src="images/resized/rsz_1img-3.jpg" class="slider-img" /></div>
+          <div class="swiper-slide"><img src="images/img-4.jpg" class="slider-img" /></div>
+          <div class="swiper-slide"><img src="images/img-5.jpg" class="slider-img" /></div>
+          <div class="swiper-slide"><img src="images/img-6.jpg" class="slider-img" /></div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
       <!-- End First Images -->
 
@@ -93,5 +102,19 @@
         </div>
       </div>
     </section>
+
+    <script type="module">
+      import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
+    
+      const swiper = new Swiper('.swiper', {
+        autoHeight: true,
+        loop: true,
+        direction: 'horizontal',
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        }
+      });
+    </script>
   </body>
 </html>

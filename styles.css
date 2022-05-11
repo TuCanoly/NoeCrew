@@ -7,6 +7,37 @@
     color: #fff;
 }
 
+.swiper {
+    width: 100vw;
+    height: 100vh;
+}
+
+.swiper-button-prev {
+    background-color: transparent;
+    padding-left: 15px;
+    color: white;
+}
+
+.swiper-button-next {
+    background-color: transparent;
+    padding-right: 15px;
+}
+
+.swiper-button-prev::after {
+    color: white;
+}
+
+.swiper-button-next::after {
+    color: white;
+}
+
+
+.slider-img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+}
+
 .section {
     margin: 0 40px;
 }
@@ -90,14 +121,21 @@
     text-align: justify;
 }
 
-.text > h2 {
+.text h2 {
     margin-bottom: 12px;
+    font-size: clamp(1.5rem, 4vw, 3rem);
+}
+
+.text p {
+    font-size: clamp(1rem, 1vw, 1.5rem);
+    line-height: 20px;
 }
 
 .text {
     margin: 20px 0; 
 }
 
+/* Changes will be applied on the classes inside this media query. This is tablet screen */
 @media (min-width: 768px) {
     .sec-images {
         display: flex;
@@ -112,6 +150,7 @@
     }
 }
 
+/* Changes will be applied on the classes inside this media query. This is laptop screen */
 @media (min-width: 1024px) {
     .sec {
         display: flex;
