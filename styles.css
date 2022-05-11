@@ -2,11 +2,9 @@
     margin: 0;
     padding: 0;
     background-color: black;
-    /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-     */
-     font-family: 'Roboto';
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
     color: #fff;
-    /* font-weight: 300; */
+
 
 /* HOW TO USE FONT WEIGHT ????????????*/ 
 /* ONE BY ONE MANUALLY */
@@ -65,9 +63,9 @@ nav ul li a{
 }
 
 @media only screen and (max-width: 600px){
-    nav ul li a{
+    /* nav ul li a{
         color: red;
-    }
+    } */
 }
 
 
@@ -107,8 +105,8 @@ nav ul li a{
     
 }
 
-.second-images img{
-    /* gap: 0.2rem; */
+.second-images{
+    gap: 0.5rem;
 }
 
 .text1{
@@ -275,16 +273,17 @@ nav ul li a{
 
 /* TEACHER SECTION END */
 
-
-
 /* SECTION FIVE */
 
 .sec5{
     display: flex;
     height: 25vh;
     margin-top: 12vh;
-    justify-content: center;
     gap: 5rem;
+}
+
+.sec5 img{
+    cursor: pointer;
 }
 
 .img3{
@@ -292,25 +291,19 @@ nav ul li a{
     gap: 0.5rem;
 }
 
-.cuadradito{
-    Width: 93px;
-    Height: 85px;
-    Top: 86px;
-    Left: 685px;
-    top: 21.94%;
-    bottom: 56.38%;
-    background: #C4C4C4;
-}
 
 /* SECTION SIX */
-
 
 .sec6{
     display: flex;
     height: 25vh;
-    justify-content: center;
-    gap: 10.8rem;
     margin-top: 10px;
+    gap: 5rem;
+
+}
+
+.sec6 img{
+    cursor: pointer;
 }
 
 .img4{
@@ -329,9 +322,9 @@ nav ul li a{
 
 .vid{
     display: flex;
-    height: 25vh;
+    height: 120vh;
     margin-top: 100px;
-    justify-content: space-evenly;
+    justify-content: space-between;
 
 }
 
@@ -346,7 +339,7 @@ nav ul li a{
     right: 2.28%;
     top: 1.41%;
     bottom: 69.59%;
-background: #C4C4C4;
+    background: #C4C4C4;
 }
 
 .yt_vids iframe{
@@ -354,7 +347,58 @@ background: #C4C4C4;
     height: 194.64px;
 }
 
+.yt_vid2{
+    Width: 600px;
+    Height: 183.54px;
+    background: #C4C4C4;
+    
+}
+
+.yt_vid3{
+    height: 183.54px;
+    width: 600px;
+    background: #C4C4C4;
+    margin-top: 10px;
+}
+
+.yt_vid4{
+    height: 188.92px;
+    width: 597px;
+    background: #C4C4C4;
+    margin-top: 10px;
+}
+
+/* FOOTER */
+
+.footer{
+    height: 25vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-text{
+    display: flex;
+    justify-content: center;
+    margin: 70px 0;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+}
+
+.links p{
+    margin: 3vh 10vh;
+
+}
 
 
+/* FOOTER 2 */
 
+.foot{
+    height: 40vh;
+    display: blockx;
+    flex-direction: column;
+    justify-content: center;
+}
 
